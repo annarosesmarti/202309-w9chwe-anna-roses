@@ -1,6 +1,6 @@
 import customRender from "../../testUtils/customRender";
-import Header from "./Header";
 import { screen } from "@testing-library/react";
+import Header from "./Header";
 
 describe("Given a Header component", () => {
   describe("When it is rendered and receives titleText 'Hogwarts' and subtitle '· The social network ·'", () => {
