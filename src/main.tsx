@@ -1,8 +1,21 @@
+import { BrowserRouter } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "@fontsource/montserrat";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/400-italic.css";
+import { ThemeProvider } from "styled-components";
+import mainTheme from "./styles/MainTheme";
+import App from "./components/App/App";
+import GlobalStyles from "./styles/GlobalStyles";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div />
-  </React.StrictMode>
+    <BrowserRouter>
+      <ThemeProvider theme={mainTheme}>
+        <GlobalStyles />
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
 );
