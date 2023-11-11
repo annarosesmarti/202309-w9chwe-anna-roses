@@ -4,7 +4,7 @@ import HomePage from "./HomePage";
 
 describe("Given a HomePage component", () => {
   describe("When it is rendered", () => {
-    test("Then it shouls show the title 'Create your network'", () => {
+    test("Then it should show the title 'Create your network'", () => {
       const expectedTitle = "Create your network";
 
       customRender(<HomePage />);

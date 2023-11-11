@@ -1,17 +1,12 @@
-import { Store } from "@reduxjs/toolkit";
-import { store } from "../store";
 import { render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import mainTheme from "../styles/MainTheme";
 
-const customRender = (childern: React.ReactElement, mockStore: Store = store) =>
+const customRender = (children: React.ReactElement) =>
   render(
     <BrowserRouter>
-      <Provider store={mockStore}>
-        <ThemeProvider theme={mainTheme}>{childern}</ThemeProvider>
-      </Provider>
+      <ThemeProvider theme={mainTheme}>{children}</ThemeProvider>
     </BrowserRouter>,
   );
 

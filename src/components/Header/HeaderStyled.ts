@@ -9,7 +9,7 @@ const HeaderStyled = styled.header`
 
   .header {
     &__logo {
-      height: 100px;
+      width: 100px;
       aspect-ratio: 1/1;
       object-fit: cover;
     }
