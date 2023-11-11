@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import HomePage from "../../Pages/HomePage/HomePage";
 import Header from "../Header/Header";
 
 const App = (): React.ReactElement => {
@@ -6,6 +7,7 @@ const App = (): React.ReactElement => {
     <>
       <Header titleText="Hogwarts" subtitleText=" The social network ·" />
       <Routes>
+        <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<Navigate to={"/home"} />} />
       </Routes>
     </>
