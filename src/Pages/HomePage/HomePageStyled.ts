@@ -2,12 +2,11 @@ import { styled } from "styled-components";
 
 const HomePageStyled = styled.header`
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     &__title {
       font-size: ${({ theme }) => theme.typography.titleSize};
       color: ${({ theme }) => theme.color.hufflepuffSecondaryColor};
