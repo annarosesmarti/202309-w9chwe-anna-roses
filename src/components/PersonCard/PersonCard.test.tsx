@@ -1,11 +1,11 @@
 import { screen } from "@testing-library/react";
 import mockPeople from "../../mocks/mockData";
-import customRender from "../../testUtils/customRender";
 import PersonCard from "./PersonCard";
+import { customRender } from "../../testUtils/customRender";
 
 describe("Given a PersonCard compomnent", () => {
   describe("When it is rendered", () => {
-    test("Then it should show 'Origin:' text in a list of items", () => {
+    test("Then it should show 'Harry' in the alternative text of the image", () => {
       const mockPerson = mockPeople[0];
       const expectedText = mockPerson.name;
 
