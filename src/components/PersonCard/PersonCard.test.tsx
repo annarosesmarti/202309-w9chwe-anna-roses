@@ -1,7 +1,7 @@
 import { screen } from "@testing-library/react";
 import PersonCard from "./PersonCard";
 import { customRender } from "../../testUtils/customRender";
-import mockPeople from "../../mocks/mockData";
+import { mockPeople } from "../../mocks/mockData";
 
 describe("Given a PersonCard compomnent", () => {
   describe("When it is rendered and receives a person and a key number 0", () => {

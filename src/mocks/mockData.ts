@@ -1,6 +1,6 @@
 import { PersonStructure } from "../store/types";
 
-const mockPeople: PersonStructure[] = [
+export const mockPeople: PersonStructure[] = [
   {
     id: 1,
     name: "Harry",
@@ -29,4 +29,200 @@ const mockPeople: PersonStructure[] = [
   },
 ];
 
-export default mockPeople;
+export const mockAllPeople: PersonStructure[] = [
+  {
+    id: 1,
+    name: "Harry",
+    surname: "Potter",
+    origin: "Half-Blood",
+    house: "Gryffindor",
+    wand: "11 inches, Holly, Phoenix feather",
+    pet: "Hedwig",
+    patronus: "Stag",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-1.webp",
+  },
+  {
+    id: 2,
+    name: "Hermione",
+    surname: "Granger",
+    origin: "Muggle-Born",
+    house: "Gryffindor",
+    wand: "10 ¾ inches, Vine, Dragon heartstring",
+    pet: "Crookshanks",
+    patronus: "Otter",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-2.webp",
+  },
+  {
+    id: 3,
+    name: "Ginny",
+    surname: "Weasley",
+    origin: "Pure-Blood",
+    house: "Gryffindor",
+    wand: "Yew, unknown",
+    pet: "Arnold",
+    patronus: "Horse",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-3.webp",
+  },
+  {
+    id: 4,
+    name: "Tom",
+    surname: "Riddle",
+    origin: "Half-Blood",
+    house: "Slytherin",
+    wand: "13 ½ inches, Yew, Phoenix feather",
+    pet: "Nagini",
+    patronus: "None",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-4.webp",
+  },
+  {
+    id: 5,
+    name: "Bellatrix",
+    surname: "Lestrange",
+    origin: "Pure-Blood",
+    house: "Slytherin",
+    wand: "12 ¾ inches, walnut, dragon heartstring",
+    pet: "Unknown",
+    patronus: "None",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-5.webp",
+  },
+  {
+    id: 6,
+    name: "Albus",
+    surname: "Dumbledore",
+    origin: "Half-Blood",
+    house: "Gryffindor",
+    wand: "15 inches, Elder, Thestral tail hair",
+    pet: "Fawkes",
+    patronus: "Phoenix",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-6.webp",
+  },
+  {
+    id: 7,
+    name: "Draco",
+    surname: "Malfoy",
+    origin: "Pure-Blood",
+    house: "Slytherin",
+    wand: "10 inches, Hawthorn, Unicorn hair",
+    pet: "Unknown",
+    patronus: "Unknown",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-7.webp",
+  },
+  {
+    id: 8,
+    name: "Minerva",
+    surname: "McGonagall",
+    origin: "Half-Blood",
+    house: "Gryffindor",
+    wand: "9 ½ inches, Fir, Dragon heartstring",
+    pet: "Unknown",
+    patronus: "Cat",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-8.webp",
+  },
+  {
+    id: 9,
+    name: "Cedric",
+    surname: "Diggory",
+    origin: "Pure-Blood",
+    house: "Hufflepuff",
+    wand: "12 ¼ inches, Ash, Unicorn hair",
+    pet: "Unknown",
+    patronus: "Unknown",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-9.webp",
+  },
+  {
+    id: 10,
+    name: "Severus",
+    surname: "Snape",
+    origin: "Half-Blood",
+    house: "Slytherin",
+    wand: "13 ½ inches, Yew, Phoenix feather",
+    pet: "Unknown",
+    patronus: "Doe",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-10.webp",
+  },
+  {
+    id: 11,
+    name: "Luna",
+    surname: "Lovegood",
+    origin: "Pure-Blood",
+    house: "Ravenclaw",
+    wand: "Unknown",
+    pet: 'Thestral named "Aquila"',
+    patronus: "Hare",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-11.webp",
+  },
+  {
+    id: 12,
+    name: "Padma",
+    surname: "Patil",
+    origin: "Pure-Blood",
+    house: "Ravenclaw",
+    wand: "Unknown",
+    pet: "Unknown",
+    patronus: "Unknown",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-12.webp",
+  },
+  {
+    id: 13,
+    name: "Nymphadora",
+    surname: "Tonks",
+    origin: "Half-Blood",
+    house: "Hufflepuff",
+    wand: "12 ¾ inches, Larch, Phoenix feather",
+    pet: "Unknown",
+    patronus: "Wolf",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-13.webp",
+  },
+  {
+    id: 14,
+    name: "Pomona",
+    surname: "Sprout",
+    origin: "Unknown",
+    house: "Hufflepuff",
+    wand: "Unknown",
+    pet: "Unknown",
+    patronus: "Unknown",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-14.webp",
+  },
+  {
+    id: 15,
+    name: "Neville",
+    surname: "Longbottom",
+    origin: "Pure-Blood",
+    house: "Gryffindor",
+    wand: "13 inches, Cherry, Unicorn hair",
+    pet: "Unknown",
+    patronus: "Unknown",
+    isEnemy: false,
+    image:
+      "https://raw.githubusercontent.com/annarosesmarti/202309-w9chwe-api-anna-roses/main/public/images/id-15.webp",
+  },
+];
