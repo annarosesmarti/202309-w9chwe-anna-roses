@@ -5,6 +5,7 @@ const HeaderStyled = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: fixed;
   gap: 10px;
   width: 100%;
   background-color: ${({ theme }) => theme.color.slytherinMainColor};
