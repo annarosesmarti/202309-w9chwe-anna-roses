@@ -3,7 +3,7 @@ import Header from "./Header";
 import { customRender } from "../../testUtils/customRender";
 
 describe("Given a Header component", () => {
-  describe("When it is rendered and receives titleText 'Hogwarts' and subtitle '· The social network ·'", () => {
+  describe("When it is rendered and receives the title text 'Hogwarts' and the subtitle '· The social network ·'", () => {
     beforeEach(() => {
       customRender(
         <Header titleText="Hogwarts" subtitleText=" The social network ·" />,
@@ -23,7 +23,6 @@ describe("Given a Header component", () => {
       const expectedText = "Hogwarts";
 
       const headingText = screen.getByRole("heading", {
-        hidden: true,
         name: expectedText,
       });
 
