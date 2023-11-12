@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import mainTheme from "./styles/MainTheme";
 import App from "./components/App/App";
-import GlobalStyles from "./styles/GlobalStyles";
+import GlobalStyled from "./styles/GlobalStyled";
 import { store } from "./store";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Provider store={store}>
         <ThemeProvider theme={mainTheme}>
-          <GlobalStyles />
+          <GlobalStyled />
           <App />
         </ThemeProvider>
       </Provider>
