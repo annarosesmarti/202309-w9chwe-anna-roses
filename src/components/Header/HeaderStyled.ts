@@ -1,15 +1,19 @@
 import { styled } from "styled-components";
 
 const HeaderStyled = styled.header`
-  padding: 30px;
+  padding: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 10px;
+  width: 100%;
   background-color: ${({ theme }) => theme.color.slytherinMainColor};
 
   .header {
+    position: fixed;
+
     &__logo {
-      width: 100px;
+      width: 80px;
       aspect-ratio: 1/1;
       object-fit: cover;
     }

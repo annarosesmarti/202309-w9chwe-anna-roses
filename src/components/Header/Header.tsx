@@ -16,8 +16,10 @@ const Header = ({
         alt="Hogwarts logo"
         className="header__logo"
       />
-      <h1 className="header__title">{titleText}</h1>
-      <span className="header__text">·{subtitleText}</span>
+      <div className="header__text-block">
+        <h1 className="header__title">{titleText}</h1>
+        <span className="header__text">·{subtitleText}</span>
+      </div>
     </HeaderStyled>
   );
 };
