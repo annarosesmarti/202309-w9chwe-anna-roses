@@ -1,9 +1,11 @@
 import { render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import mainTheme from "../styles/MainTheme";
+import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import { store } from "../store";
+import mainTheme from "../styles/MainTheme";
+import { PersonStructure } from "../store/types";
+import { peopleReducer } from "../store/features/people/peopleSlice";
 
 export const customRender = (children: React.ReactElement) =>
   render(
@@ -12,11 +14,21 @@ export const customRender = (children: React.ReactElement) =>
     </BrowserRouter>,
   );
 
-export const customRenderStore = (children: React.ReactElement) =>
+export const customRenderWithProviders = (
+  children: React.ReactElement,
+  mockData: PersonStructure[],
+) => {
+  const mockStore = configureStore({
+    reducer: {
+      peopleState: peopleReducer,
+    },
+    preloadedState: { peopleState: { people: mockData } },
+  });
   render(
     <BrowserRouter>
-      <Provider store={store}>
+      <Provider store={mockStore}>
         <ThemeProvider theme={mainTheme}>{children}</ThemeProvider>
       </Provider>
     </BrowserRouter>,
   );
+};

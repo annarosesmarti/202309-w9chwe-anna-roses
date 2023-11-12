@@ -2,7 +2,7 @@ import mockPeople from "../../../mocks/mockData";
 import { PeopleStructure } from "../../types";
 import { loadPeopleActionCreator, peopleReducer } from "./peopleSlice";
 
-describe("Given a PeopleReducer reducer", () => {
+describe("Given a peopleReducer reducer", () => {
   describe("When it receives an empty list and a people list", () => {
     test("Then it should return a List of 15 people in it", () => {
       const currentListState: PeopleStructure = {
