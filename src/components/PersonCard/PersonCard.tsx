@@ -8,7 +8,13 @@ interface PersonCardProps {
 const PersonCard = ({ person }: PersonCardProps): React.ReactElement => {
   return (
     <PersonCardStyled className="card">
-      <img src={person.image} alt={person.name} className="card__image" />
+      <img
+        src={person.image}
+        alt={person.name}
+        className="card__image"
+        width={310}
+        height={310}
+      />
       <ul className="card__list">
         <li className="card__item card__name">Name: {person.name}</li>
         <li className="card__item card__surname">Surname: {person.surname}</li>
