@@ -1,9 +1,9 @@
-import mockPeople from "../../mocks/mockData";
+import { useAppSelector } from "../../store/hooks";
 import PersonCard from "../PersonCard/PersonCard";
 import PeopleListStyled from "./PeopleListStyled";
 
 const PeopleList = (): React.ReactElement => {
-  const people = mockPeople;
+  const people = useAppSelector((state) => state.peopleState.people);
 
   return (
     <PeopleListStyled className="cards">
