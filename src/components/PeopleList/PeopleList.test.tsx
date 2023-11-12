@@ -1,21 +1,19 @@
 import { screen } from "@testing-library/react";
-import mockPeople from "../../mocks/mockData";
-import { customRenderStore } from "../../testUtils/customRender";
 import PeopleList from "./PeopleList";
 
+import { customRenderWithProviders } from "../../testUtils/customRender";
+import mockPeople from "../../mocks/mockData";
+
 describe("Given a PeopleList component", () => {
-  describe("When it is rendered and receives a list of people", () => {
-    test("Then it should show 'Hermione' in the alternative text of an image", () => {
-      const mockPerson = mockPeople[1];
-      const expectedText = mockPerson.name;
+  describe("When it is rendered and receives a list of two people", () => {
+    test("Then it should create two images in a list of two people", () => {
+      const mockList = mockPeople;
+      const expectedNumberOfItems = 2;
 
-      customRenderStore(<PeopleList />);
+      customRenderWithProviders(<PeopleList />, mockList);
+      const list = screen.getAllByRole("img").length;
 
-      const text = screen.getByRole("img", {
-        name: expectedText,
-      });
-
-      expect(text).toBeInTheDocument();
+      expect(list).toBe(expectedNumberOfItems);
     });
   });
 });
