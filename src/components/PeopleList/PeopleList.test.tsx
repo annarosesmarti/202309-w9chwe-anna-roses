@@ -1,8 +1,7 @@
 import { screen } from "@testing-library/react";
 import PeopleList from "./PeopleList";
-
 import { customRenderWithProviders } from "../../testUtils/customRender";
-import mockPeople from "../../mocks/mockData";
+import { mockPeople } from "../../mocks/mockData";
 
 describe("Given a PeopleList component", () => {
   describe("When it is rendered and receives a list of two people", () => {

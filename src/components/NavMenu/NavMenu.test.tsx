@@ -2,7 +2,7 @@ import userEvent from "@testing-library/user-event";
 import { screen } from "@testing-library/react";
 import App from "../App/App";
 import { customRenderWithProviders } from "../../testUtils/customRender";
-import mockPeople from "../../mocks/mockData";
+import { mockPeople } from "../../mocks/mockData";
 
 describe("Given a NavMenu component", () => {
   describe("When it receives a click on the Home link and a list of two people", () => {
