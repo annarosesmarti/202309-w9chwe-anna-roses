@@ -9,8 +9,8 @@ const HomePageStyled = styled.header`
   top: 0;
 
   .header {
-    margin-top: 100px;
     &__title {
+      margin-top: 150px;
       font-size: ${({ theme }) => theme.typography.titleSize};
       color: ${({ theme }) => theme.color.hufflepuffSecondaryColor};
     }
