@@ -1,4 +1,4 @@
-import mockPeople from "../../../mocks/mockData";
+import { mockPeople } from "../../../mocks/mockData";
 import { PeopleStructure } from "../../types";
 import { loadPeopleActionCreator, peopleReducer } from "./peopleSlice";
 
